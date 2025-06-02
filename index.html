@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamify - Media Discovery Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo">Streamify</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#popular" class="nav-link">Popular</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#" class="nav-link btn-signin">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Your Next Favorite Show</h1>
+            <p>Stream thousands of movies and TV shows anytime, anywhere.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for movies, TV shows...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="trending" class="section">
+        <div class="section-header">
+            <h2>Trending Movies This Week</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/interstellar.jpg" alt="Interstellar">
+                    <div class="movie-overlay">
+                        <a href="https://www.netflix.com/title/70252589" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.6</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>2014</span>
+                        <span>Sci-Fi</span>
+                        <span>2h 49m</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/iception.jpg" alt="Inception">
+                    <div class="movie-overlay">
+                        <a href="https://www.netflix.com/title/70131314" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.8</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>2010</span>
+                        <span>Sci-Fi</span>
+                        <span>2h 28m</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/darkKnight.jpg" alt="The Dark Knight">
+                    <div class="movie-overlay">
+                        <a href="https://www.hbomax.com/feature/urn:hbo:feature:GXdu2ZAglVJuAuwEAABVJ" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>9.0</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>2008</span>
+                        <span>Action</span>
+                        <span>2h 32m</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/parasite.jpg" alt="Parasite">
+                    <div class="movie-overlay">
+                        <a href="https://www.hulu.com/movie/parasite" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Parasite</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.5</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>2019</span>
+                        <span>Drama</span>
+                        <span>2h 12m</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular" class="section">
+        <div class="section-header">
+            <h2>Popular TV Shows</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/StrangerThings.jpg" alt="Stranger Things">
+                    <div class="movie-overlay">
+                        <a href="#" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                    <div class="series-badge">New Season</div>
+                </div>
+                <div class="movie-info">
+                    <h3>Stranger Things</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.7</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>4 Seasons</span>
+                        <span>Sci-Fi</span>
+                        <span>34 Episodes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/Mandalorian.jpg" alt="The Mandalorian">
+                    <div class="movie-overlay">
+                        <a href="#" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Mandalorian</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.8</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>3 Seasons</span>
+                        <span>Sci-Fi</span>
+                        <span>24 Episodes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/BB.jpg" alt="Breaking Bad">
+                    <div class="movie-overlay">
+                        <a href="#" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                    <div class="series-badge">Classic</div>
+                </div>
+                <div class="movie-info">
+                    <h3>Breaking Bad</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>5 Seasons</span>
+                        <span>Drama</span>
+                        <span>62 Episodes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="images/GoT.jpg" alt="Game of Thrones">
+                    <div class="movie-overlay">
+                        <a href="#" class="watch-now-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Now
+                        </a>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i>
+                            <span class="watchlist-text">Watchlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Game of Thrones</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>9.2</span>
+                    </div>
+                    <div class="movie-meta">
+                        <span>8 Seasons</span>
+                        <span>Fantasy</span>
+                        <span>73 Episodes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="section-header">
+            <h2>User Reviews</h2>
+        </div>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h4>Alex Johnson</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"The cinematography in Interstellar is breathtaking. One of Nolan's best works!"</p>
+                <span class="review-date">Posted on June 1, 2025</span>
+            </div>
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h4>Sarah Williams</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Breaking Bad is a masterpiece. The character development is unparalleled in television history."</p>
+                <span class="review-date">Posted on May 28, 2025</span>
+            </div>
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"The Mandalorian brings fresh energy to the Star Wars universe. Baby Yoda is adorable!"</p>
+                <span class="review-date">Posted on April 5, 2025</span>
+            </div>
+        </div>
+        
+        <div class="review-form-container">
+            <h3>Submit Your Review</h3>
+            <form class="review-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Your Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" class="star"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" class="star"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" class="star"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" class="star"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" class="star"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" rows="5" placeholder="Share your thoughts..." required></textarea>
+                </div>
+                <div class="form-group" style="align-items: center;">
+                    <button type="submit" class="submit-btn">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">Streamify</a>
+                <p>Your gateway to endless entertainment</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                        <li><a href="#popular">Popular</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Streamify. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
